@@ -61,6 +61,10 @@ class Display {
             if(isNaN(currentValue) || isNaN(previousValue)) {
                 return
             }
+            if(this.operator === 'split' && currentValue === 0) {
+                this.currentValue = 'No se puede dividir entre 0'
+                return;
+            }
             
             this.currentValue = this.calculator[this.operator](previousValue,currentValue);
             if(this.currentValue % 1 !== 0){
