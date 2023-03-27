@@ -1,0 +1,85 @@
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+   
+  }
+  
+  body{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.calculator{
+   
+    margin-top: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    display:flex;
+    box-shadow: 5px 5px 30px;
+    width: 400px;
+    height: 500px;
+    background-color:#4C4C4C;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.displaycalc{
+    
+    display:flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 20px 10px;
+    max-width: 100%;
+   min-height: 140px;
+   
+    
+}
+.previous-value, .current-value {
+   
+    display:flex;
+    margin: 0;
+    color: white;
+   font-size: 50px;
+}
+.previous-value{
+    
+    
+    background-color: #F6932F;
+    border-radius: 2px;
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+
+.buttonscalc{
+    border-width: 25px;
+    border-color: aqua;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    height:100%;
+   
+}
+
+.buttons{
+    font-family: 'Ubuntu', sans-serif;
+    background-color:#C7C7C7;
+    width: 100px;
+    border-width: 1px;
+}
+.button-zero{
+    width: 200px;
+    border-bottom-left-radius: 10px;
+    
+}
+.button-equal{
+    
+    border-bottom-right-radius: 10px;
+    
+}
+.button-divide , .button-equal , .button-plus, .button-subtract,.button-multiply{
+    background-color:#F6932F;
+}
