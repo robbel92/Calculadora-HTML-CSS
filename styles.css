@@ -35,6 +35,8 @@
     padding: 20px 10px;
     max-width: 100%;
    min-height: 140px;
+   word-wrap: break-word;
+   overflow: hidden;
    
     
 }
