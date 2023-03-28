@@ -21,8 +21,11 @@ class Display {
         }
 
         addNumber(number) {
-            if(number ===',' && this.currentValue.includes(',')){
+            if(number ==='.' && this.currentValue.includes('.')){
                 return
+            }
+            if(this.currentValue.length > 12){
+                return;
             }
             this.currentValue = this.currentValue.toString() + number.toString();
           
@@ -50,7 +53,7 @@ class Display {
         deleteAll(){
             this.currentValue = '';
             this.previousValue = '';
-            this.operator = undefined
+            this.operator = undefined;
             this.printValues();
         }
 
@@ -65,7 +68,6 @@ class Display {
                 this.currentValue = 'No se puede dividir entre 0'
                 return;
             }
-            
             this.currentValue = this.calculator[this.operator](previousValue,currentValue);
             if(this.currentValue % 1 !== 0){
                 this.currentValue = parseFloat(this.currentValue.toFixed(3));
